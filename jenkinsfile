@@ -14,8 +14,12 @@ pipeline {
      // stage to verify sonar-scanner 
      stage('sonar-scaner verify'){
          steps {
-             echo 'checking version'
+             echo 'checking sonar version'
              bat 'sonar-scanner --version'
+             echo 'checking java version'
+             bat 'docker version'
+             echo 'chekcing java version'
+             bat 'java -v'
            
          }
      }
