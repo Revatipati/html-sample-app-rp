@@ -19,7 +19,7 @@ pipeline {
              echo 'checking java version'
              bat 'docker version'
              echo 'chekcing java version'
-             bat 'java -v'
+             bat 'java -version'
            
          }
      }
